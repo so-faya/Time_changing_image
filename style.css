@@ -1,0 +1,34 @@
+body{
+    padding: 0;
+    margin: 100px 0 0 0;
+    display: flex;
+    justify-content: center;
+    background-color: red;
+}
+.body-container{
+    border: 1px solid red;
+    height: 100vh;
+    flex-basis: 50%;
+}
+.sectone,.secttwo,.sectthree,.footer{
+    font-family: sans-serif;
+    border: 1px solid green;
+    flex-basis: 50%;
+    text-align: center;
+}
+.secttwo,.sectthree{
+    font-size: 20px;
+    font-weight: 700;
+}
+.heading{
+    border: 1px solid yellow;
+    font-size: 40px;
+    font-weight: bolder;   
+}
+.para{
+    font-size: 20px;
+    font-weight: 700;
+}
+.secttwo{
+    
+}
