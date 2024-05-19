@@ -1,13 +1,13 @@
 body{
     padding: 0;
-    margin: 100px 0 0 0;
+    margin: 50px 0 0 0;
     display: flex;
     justify-content: center;
     background-color: red;
 }
 .body-container{
     border: 1px solid red;
-    height: 100vh;
+    /* height: 100vh; */
     flex-basis: 50%;
 }
 .sectone,.secttwo,.sectthree,.footer{
@@ -16,19 +16,51 @@ body{
     flex-basis: 50%;
     text-align: center;
 }
-.secttwo,.sectthree{
-    font-size: 20px;
+.sectthree{
+    font-size: 18px;
+    font-weight: 700;
+}
+.secttwo{
+    background-image: url(image/cat-7688749_1280.webp);
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    font-size: 25px;
     font-weight: 700;
 }
 .heading{
     border: 1px solid yellow;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: bolder;   
 }
 .para{
     font-size: 20px;
     font-weight: 700;
 }
+.readingtime{
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
+}
 .secttwo{
-    
+     height: 350px;
+}
+ul{
+    list-style-type: none;
+}
+.footer{
+    margin-top: 20px;
+}
+.party{
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    margin-bottom: 30px;
+    font-size: 20px;
+
 }
