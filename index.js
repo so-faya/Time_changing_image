@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const hours = now.getHours();
         const minutes = now.getMinutes();
 
-        if ((hours === 4 && minutes >= 0) || (hours === 5) || (hours === 6 && minutes === 0) || (hours === 7 && minutes === 0)) {
+        if ((hours === 6 && minutes >= 0) || (hours === 7) || (hours === 8 && minutes === 0)) {
             sectwonode.style.backgroundImage = "url(image/wakeup.jpg)";  //  wake-up time image path
         } else if ((hours === 11 && minutes >= 5) || (hours === 12 && minutes === 0)) {
             sectwonode.style.backgroundImage = "url(image/bengal-cat-8012976_1280.webp)";  //  lunch time image path
@@ -36,18 +36,6 @@ document.addEventListener("DOMContentLoaded", function() {
     updateImage();
     setInterval(updateImage, 60000); // Check every minute
 });
-
-
-
-
-
-
-
-
-
-
-// const partynode = document.querySelector(".party")
-// const sectwonode = document.querySelector(".sectwo")
 
 
 
