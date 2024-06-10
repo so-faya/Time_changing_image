@@ -24,27 +24,41 @@
         <section class="sectthree buttons">
             <ul>
                 <li> SET WAKE UP TIME
-                    <button class="time-setter" onclick="setTimeRanges('wakeUp')">
+                    <button class="time-setter" onclick="editTimeRange('wakeUp')">
                         6:00am - 10:00am
                     </button>
                 </li>
                 <li>SET LUNCH TIME
-                    <button class="time-setter1" onclick="setTimeRanges('lunch')">
+                    <button class="time-setter1" onclick="editTimeRange('lunch')">
                         11:05pm - 12:00pm
                     </button>
                 </li>
                 <li> SET NAP TIME 
-                    <button class="time-setter2" onclick="setTimeRanges('bed')">
+                    <button class="time-setter2" onclick="editTimeRange('bed')">
                         7:00pm - 12:00am
                     </button>
                 </li>
                 <li> SET PARTY TIME 
-                    <button class="time-setter2" onclick="setTimeRanges('party')">
+                    <button class="time-setter2" onclick="editTimeRange('party')">
                         7:00pm - 12:00am
                     </button>
                 </li>
             </ul>
         </section>
+        <div id="timeRangeEditor" style="display:none;">
+            <h3>Edit Time Range</h3>
+            <label for="startTime">Start Time:</label>
+            <input type="time" id="startTime">
+            <br>
+            <label for="endTime">End Time:</label>
+            <input type="time" id="endTime">
+            <br>
+            <label for="imageUrl">Image URL:</label>
+            <input type="text" id="imageUrl">
+            <br>
+            <button onclick="saveTimeRange()">Save</button>
+            <button onclick="cancelEdit()">Cancel</button>
+        </div>
 
         <footer class="footer">
             <button class="party" onclick="changeImg()" id="party">PARTY TIME!</button> <br>

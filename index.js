@@ -80,12 +80,45 @@ document.addEventListener("DOMContentLoaded", function() {
             currentRange = timeRanges[rangeName];
             updateImage();  // Immediately update the image
         } else {
-            console.error("Invalid time range rangeName.");
+            console.error("Invalid time rangeName.");
         }
     }
 
     // Expose setTimeRanges to the global scope
     window.setTimeRanges = setTimeRanges;
+    
+
+    function editTimeRange(rangeName) {
+        if (timeRanges[rangeName]) {
+            currentEditRange = rangeName;
+            document.getElementById('timeRangeEditor').style.display = 'block';
+        } else {
+            console.error("Invalid time range name.");
+        }
+    }
+
+
+    function saveTimeRange() {
+        const startTime = document.getElementById('startTime').value;
+        const endTime = document.getElementById('endTime').value;
+        const imageUrl = document.getElementById('imageUrl').value;
+
+        if (startTime && endTime && imageUrl) {
+            timeRanges[currentEditRange] = [{ start: startTime, end: endTime, image: imageUrl }];
+            setTimeRanges(currentEditRange);
+            document.getElementById('timeRangeEditor').style.display = 'none';
+        } else {
+            alert("Please fill in all fields.");
+        }
+    }
+
+    function cancelEdit() {
+        document.getElementById('timeRangeEditor').style.display = 'none';
+    }
+
+    window.editTimeRange = editTimeRange;
+    window.saveTimeRange = saveTimeRange;
+    window.cancelEdit = cancelEdit;
 
     setTimeRanges('wakeUp');  // Set initial time range
     setInterval(updateImage, 60000);  // Check every minute
