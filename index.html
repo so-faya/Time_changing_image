@@ -21,11 +21,28 @@
             <div class="wording">LET'S PARTY </div>
         </section>
 
-        <section class="sectthree">
+        <section class="sectthree buttons">
             <ul>
-                <li> SET WAKE UP TIME <button class="time-setter">6:00am - 10:00am</button></li>
-                <li>SET LUNCH TIME <button class="time-setter1">11:05pm - 12:00pm </button></li>
-                <li> SET NAP TIME <button class="time-setter2">7:00pm - 12:00am</button></li>
+                <li> SET WAKE UP TIME
+                    <button class="time-setter" onclick="setTimeRanges('wakeUp')">
+                        6:00am - 10:00am
+                    </button>
+                </li>
+                <li>SET LUNCH TIME
+                    <button class="time-setter1" onclick="setTimeRanges('lunch')">
+                        11:05pm - 12:00pm
+                    </button>
+                </li>
+                <li> SET NAP TIME 
+                    <button class="time-setter2" onclick="setTimeRanges('bed')">
+                        7:00pm - 12:00am
+                    </button>
+                </li>
+                <li> SET PARTY TIME 
+                    <button class="time-setter2" onclick="setTimeRanges('party')">
+                        7:00pm - 12:00am
+                    </button>
+                </li>
             </ul>
         </section>
 
