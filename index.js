@@ -15,13 +15,13 @@ document.addEventListener("DOMContentLoaded", function() {
             { start: "04:00", end: "06:00", image: "image/wakeup.jpg"}
         ],
         lunch: [
-            { start: "11:05", end: "12:00", image: "image/bengal-cat-8012976_1280.webp"  }
+            { start: "11:05", end: "18:59", image: "image/bengal-cat-8012976_1280.webp"  }
         ],
         bed: [
-            { start: "18:00", end: "20:00", image: "image/cat-8130334_1280.webp" }
+            { start: "19:00", end: "00:00", image: "image/cat-8130334_1280.webp" }
         ],
         party: [
-            { start: "00:00", end: "03:30", image: "image/cat-7688749_1280.webp" }
+            { start: "00:01", end: "03:30", image: "image/cat-7688749_1280.webp" }
         ]
     };
 
